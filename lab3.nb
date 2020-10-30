@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[    505002,      10324]
-NotebookOptionsPosition[    488799,      10075]
-NotebookOutlinePosition[    489218,      10093]
-CellTagsIndexPosition[    489175,      10090]
+NotebookDataLength[    521976,      10743]
+NotebookOptionsPosition[    505670,      10493]
+NotebookOutlinePosition[    506089,      10511]
+CellTagsIndexPosition[    506046,      10508]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -8303,7 +8303,7 @@ Cell[TextData[{
   FontWeight->"Bold",
   FontColor->RGBColor[
    0.4271610589761196, 0.4346227206836042, 0.029404135194934004`]],
- StyleBox["\" to specify the network model\n",
+ StyleBox["\" to specify the network model",
   FontWeight->"Bold"]
 }], "Text",
  CellChangeTimes->{{3.811755957885317*^9, 3.8117559654223433`*^9}, {
@@ -8332,110 +8332,528 @@ Cell[TextData[{
    3.812882183847061*^9}, {3.813032254962674*^9, 3.813032327425441*^9}, {
    3.813032494849585*^9, 3.8130324985951076`*^9}, {3.813032884304639*^9, 
    3.8130328907616634`*^9}, {3.8130332348092194`*^9, 3.813033234982381*^9}, {
-   3.813036716363543*^9, 
-   3.813036716930764*^9}},ExpressionUUID->"62190b28-2ebd-402c-bf6a-\
+   3.813036716363543*^9, 3.813036716930764*^9}, 
+   3.813038321756895*^9},ExpressionUUID->"62190b28-2ebd-402c-bf6a-\
 0b44297e2695"],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Gamma]", "=", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "1", ",", "1"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Mu]", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0.1", ",", "1"}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"r", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"1", "/", "2"}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
   RowBox[{
-   RowBox[{
-    RowBox[{"\[Mu]", " ", "=", " ", 
-     RowBox[{"{", 
-      RowBox[{"0.8", ",", "0.5", ",", "0.3"}], "}"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"r", " ", "=", " ", 
-     RowBox[{"MatrixForm", "[", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", " ", 
-       "\[IndentingNewLine]", 
-       RowBox[{"{", 
-        RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", " ", 
-       "\[IndentingNewLine]", 
-       RowBox[{"{", 
-        RowBox[{"0.5", ",", "0", ",", "0"}], "}"}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"c", " ", "=", " ", 
-     RowBox[{"{", 
-      RowBox[{"2", ",", "1", ",", "\[Infinity]"}], "}"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"\[ScriptCapitalN]", " ", "=", " ", 
-     RowBox[{"QueueingNetworkProcess", "[", 
-      RowBox[{"\[Lambda]", " ", ",", "\[Mu]", ",", "r", ",", "c"}], "]"}]}], 
-    ";"}], "\[IndentingNewLine]", 
-   RowBox[{"QueueProperties", "[", 
+   RowBox[{"c", "=", 
     RowBox[{"{", 
-     RowBox[{"\[ScriptCapitalN]", ",", "1"}], "}"}], "]"}]}]}]], "Input",
- CellChangeTimes->{{3.8130325059585156`*^9, 3.813032616110073*^9}, {
-   3.813032690854726*^9, 3.8130329013770943`*^9}, {3.8130329315843225`*^9, 
-   3.813033168458684*^9}, 3.81303355199736*^9},
- CellLabel->"In[97]:=",ExpressionUUID->"8003efe8-666f-4786-9aa9-6f8cf6ae1c3e"],
-
-Cell[BoxData[
- TemplateBox[{
-  "QueueProperties","nque",
-   "\"The first argument \\!\\(\\*RowBox[{\\\"QueueingNetworkProcess\\\", \
-\\\"[\\\", RowBox[{\\\"\[Lambda]\\\", \\\",\\\", RowBox[{\\\"{\\\", \
-RowBox[{\\\"0.8`\\\", \\\",\\\", \\\"0.5`\\\", \\\",\\\", \\\"0.3`\\\"}], \
-\\\"}\\\"}], \\\",\\\", TagBox[RowBox[{\\\"(\\\", \\\"\[NoBreak]\\\", \
-TagBox[GridBox[{{\\\"0\\\"}, {\\\"1\\\"}, {\\\"0\\\"}}, \
-Rule[ColumnAlignments, Center], Rule[RowSpacings, 1], Rule[ColumnAlignments, \
-Left]], Column], \\\"\[NoBreak]\\\", \\\")\\\"}], Function[BoxForm`e$, \
-MatrixForm[BoxForm`e$, List[0, 0, 1], List[0.5`, 0, 0]]]], \\\",\\\", \
-RowBox[{\\\"{\\\", RowBox[{\\\"2\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \\\"\
-\[Infinity]\\\"}], \\\"}\\\"}]}], \\\"]\\\"}]\\) is not a valid specification \
-for a queueing process or data.\"",2,101,2,32984474387369650866,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{{3.813033070392557*^9, 3.8130331131955757`*^9}, {
-   3.8130331497331967`*^9, 3.8130331695977445`*^9}, 3.8130340373756113`*^9, 
-   3.81303490453635*^9, 3.813034978858406*^9, 3.813035229691822*^9, 
-   3.813035856603962*^9, 3.8130361796345377`*^9, 3.8130364410833597`*^9},
- CellLabel->
-  "During evaluation of \
-In[97]:=",ExpressionUUID->"c14c635b-7782-4331-a50f-2e42d964217e"],
-
-Cell[BoxData[
+     RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[ScriptCapitalN]", "=", 
+   RowBox[{"QueueingNetworkProcess", "[", 
+    RowBox[{"\[Gamma]", ",", "r", ",", "\[Mu]", ",", "c"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"QueueProperties", "[", 
   RowBox[{"{", 
-   RowBox[{
-    RowBox[{"QueueingNetworkProcess", "[", 
-     RowBox[{"\[Lambda]", ",", 
-      RowBox[{"{", 
-       RowBox[{"0.8`", ",", "0.5`", ",", "0.3`"}], "}"}], ",", 
-      TagBox[
-       RowBox[{"(", "\[NoBreak]", 
-        TagBox[GridBox[{
-           {"0"},
-           {"1"},
-           {"0"}
-          },
-          GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
-          
-          GridBoxSpacings->{"Columns" -> {
-              Offset[0.27999999999999997`], {
-               Offset[0.5599999999999999]}, 
-              Offset[0.27999999999999997`]}, "Rows" -> {
-              Offset[0.2], {
-               Offset[0.4]}, 
-              Offset[0.2]}}],
-         Column], "\[NoBreak]", ")"}],
-       Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$, {0, 0, 1}, {0.5, 0, 0}]]], ",", 
-      RowBox[{"{", 
-       RowBox[{"2", ",", "1", ",", "\[Infinity]"}], "}"}]}], "]"}], ",", 
-    "1"}], "}"}], "]"}]], "Output",
+   RowBox[{"\[ScriptCapitalN]", ",", "1"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"QueueProperties", "[", 
+  RowBox[{"{", 
+   RowBox[{"\[ScriptCapitalN]", ",", "2"}], "}"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"QueueProperties", "[", 
+  RowBox[{"{", 
+   RowBox[{"\[ScriptCapitalN]", ",", "3"}], "}"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8130325059585156`*^9, 3.813032616110073*^9}, {
+   3.813032690854726*^9, 3.8130329013770943`*^9}, {3.8130329315843225`*^9, 
+   3.813033168458684*^9}, 3.81303355199736*^9, {3.8130376579887667`*^9, 
+   3.81303767830226*^9}, {3.813037773977139*^9, 3.8130377874196033`*^9}, {
+   3.813037985170187*^9, 3.8130380206888313`*^9}, {3.813038088412346*^9, 
+   3.813038248137232*^9}, {3.8130382993926764`*^9, 
+   3.81303831610957*^9}},ExpressionUUID->"8003efe8-666f-4786-9aa9-\
+6f8cf6ae1c3e"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     GraphicsBox[GeometricTransformationBox[
+       {Arrowheads[Medium], {{
+          {GrayLevel[1], 
+           RectangleBox[NCache[{3, Rational[-1, 2]}, {3, -0.5}]]}, {
+           {GrayLevel[0], 
+            LineBox[NCache[{{3, Rational[-1, 2]}, {3, Rational[1, 2]}}, {{
+               3, -0.5}, {3, 0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[16, 5], Rational[-1, 2]}, {
+               Rational[16, 5], Rational[1, 2]}}, {{3.2, -0.5}, {3.2, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[17, 5], Rational[-1, 2]}, {
+               Rational[17, 5], Rational[1, 2]}}, {{3.4, -0.5}, {3.4, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[18, 5], Rational[-1, 2]}, {
+               Rational[18, 5], Rational[1, 2]}}, {{3.6, -0.5}, {3.6, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[19, 5], Rational[-1, 2]}, {
+               Rational[19, 5], Rational[1, 2]}}, {{3.8, -0.5}, {3.8, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{4, Rational[-1, 2]}, {4, Rational[1, 2]}}, {{
+               4, -0.5}, {4, 0.5}}]]}}, 
+          {GrayLevel[0], 
+           LineBox[NCache[{{1, Rational[-1, 2]}, {4, Rational[-1, 2]}, {
+              4, Rational[1, 2]}, {1, Rational[1, 2]}}, {{1, -0.5}, {
+              4, -0.5}, {4, 0.5}, {1, 0.5}}]]}}, 
+         {GrayLevel[0], ArrowBox[{{0, 0}, {2, 0}}]}, 
+         TagBox[
+          TooltipBox[InsetBox["2", NCache[{Rational[1, 2], 0}, {0.5, 0}], {0, -1}],
+           "2"],
+          Annotation[#, 2, "Tooltip"]& ]}, 
+        {GrayLevel[1], EdgeForm[GrayLevel[0]], DiskBox[{6.5, 0}, 0.5]}, 
+        TagBox[
+         TooltipBox[InsetBox["1", {6.5, 0}, {0, 0}],
+          "1"],
+         Annotation[#, 1, "Tooltip"]& ], 
+        {GrayLevel[0], ArrowBox[{{4, 0}, {6., 0.}}]}, 
+        {GrayLevel[0], ArrowBox[{{7, 0}, {8, 0}}]}}, 
+       NCache[{{{Rational[1, 8], 0}, {0, Rational[1, 8]}}, {
+         0, Rational[1, 2]}}, {{{0.125, 0}, {0, 0.125}}, {0, 0.5}}]],
+      AlignmentPoint->Center,
+      Axes->False,
+      AxesLabel->None,
+      AxesOrigin->Automatic,
+      AxesStyle->{},
+      Background->RGBColor[1., 1., 0.85],
+      BaseStyle->{},
+      BaselinePosition->Automatic,
+      ColorOutput->Automatic,
+      ContentSelectable->Automatic,
+      CoordinatesToolOptions:>Automatic,
+      DisplayFunction:>$DisplayFunction,
+      Epilog->{},
+      FormatType:>TraditionalForm,
+      FrameTicks->None,
+      FrameTicksStyle->{},
+      GridLines->None,
+      GridLinesStyle->{},
+      ImageMargins->0.,
+      ImagePadding->All,
+      ImageSizeRaw->Automatic,
+      Method->Automatic,
+      PlotRange->All,
+      PlotRangeClipping->False,
+      PlotRangePadding->Automatic,
+      PlotRegion->Automatic,
+      PreserveImageOptions->Automatic,
+      Prolog->{},
+      RotateLabel->True,
+      Ticks->None,
+      TicksStyle->{}], "\[SpanFromLeft]"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox[
+        StyleBox["\<\"Basic Properties\"\>",
+         StripOnInput->False,
+         FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
+       "902be85d-d6fc-46ce-ad21-fdbf13937ba8"],
+      Text[
+       Style["Basic Properties", Bold]]], "\[SpanFromLeft]"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"NetworkType\"\>", TextForm]], "InlineText",ExpressionUUID->
+       "584ea514-b346-4343-a3c5-b1b5a9132fed"],
+      Text["NetworkType"]], "\<\"Open\"\>"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"NodeCount\"\>", TextForm]], "InlineText",ExpressionUUID->
+       "73cda279-1f19-426a-9ebf-2a9512fe1a6a"],
+      Text["NodeCount"]], "3"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"SelectedNode\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"4e9d9eee-c47e-4cdb-9d4a-35146484e9a6"],
+      Text["SelectedNode"]], "1"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox[
+        StyleBox["\<\"Performance Measures\"\>",
+         StripOnInput->False,
+         FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
+       "0c493bd9-5bfc-445b-999a-1ec782e736c8"],
+      Text[
+       Style["Performance Measures", Bold]]], "\[SpanFromLeft]"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanSystemSize\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"07858068-4dcb-47c4-904f-ded6579c2392"],
+      Text["MeanSystemSize"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanSystemTime\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"0afc9635-fb2e-409a-aa3a-af8c4ae5cfd6"],
+      Text["MeanSystemTime"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanQueueSize\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"d981c313-21c0-4181-ac34-1c466bf79ee7"],
+      Text["MeanQueueSize"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanQueueTime\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"0e7e350c-7579-4e5c-8437-5134a6d60b5d"],
+      Text["MeanQueueTime"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}
+   },
+   AutoDelete->False,
+   BaseStyle->{FontFamily -> "Times"},
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxBackground->{"Columns" -> {{
+        RGBColor[1., 1., 0.85]}}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {{1}}, "Rows" -> {{1}}}],
+  "Grid"]], "Output",
  CellChangeTimes->{{3.813033005544016*^9, 3.813033113206586*^9}, {
    3.813033149744207*^9, 3.8130331696077538`*^9}, 3.8130340373846188`*^9, 
    3.8130349045533657`*^9, 3.8130349788714175`*^9, 3.813035229709962*^9, 
-   3.813035856613432*^9, 3.813036179644055*^9, 3.813036441092523*^9},
+   3.813035856613432*^9, 3.813036179644055*^9, 3.813036441092523*^9, {
+   3.813037670774467*^9, 3.813037683707691*^9}, {3.8130377765388403`*^9, 
+   3.8130377888490667`*^9}, {3.81303799420401*^9, 3.8130380266160707`*^9}, {
+   3.813038196088323*^9, 3.813038249919297*^9}, 3.8130383029298058`*^9},
  CellLabel->
-  "Out[101]=",ExpressionUUID->"f8fd730d-8d49-480d-8c8c-ffbf2c10bc01"]
+  "Out[282]=",ExpressionUUID->"b14e7611-9d0e-4781-a254-02eb59552a76"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     GraphicsBox[GeometricTransformationBox[
+       {Arrowheads[Medium], {{
+          {GrayLevel[1], 
+           RectangleBox[NCache[{3, Rational[-1, 2]}, {3, -0.5}]]}, {
+           {GrayLevel[0], 
+            LineBox[NCache[{{3, Rational[-1, 2]}, {3, Rational[1, 2]}}, {{
+               3, -0.5}, {3, 0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[16, 5], Rational[-1, 2]}, {
+               Rational[16, 5], Rational[1, 2]}}, {{3.2, -0.5}, {3.2, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[17, 5], Rational[-1, 2]}, {
+               Rational[17, 5], Rational[1, 2]}}, {{3.4, -0.5}, {3.4, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[18, 5], Rational[-1, 2]}, {
+               Rational[18, 5], Rational[1, 2]}}, {{3.6, -0.5}, {3.6, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[19, 5], Rational[-1, 2]}, {
+               Rational[19, 5], Rational[1, 2]}}, {{3.8, -0.5}, {3.8, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{4, Rational[-1, 2]}, {4, Rational[1, 2]}}, {{
+               4, -0.5}, {4, 0.5}}]]}}, 
+          {GrayLevel[0], 
+           LineBox[NCache[{{1, Rational[-1, 2]}, {4, Rational[-1, 2]}, {
+              4, Rational[1, 2]}, {1, Rational[1, 2]}}, {{1, -0.5}, {
+              4, -0.5}, {4, 0.5}, {1, 0.5}}]]}}, 
+         {GrayLevel[0], ArrowBox[{{0, 0}, {2, 0}}]}, 
+         TagBox[
+          TooltipBox[InsetBox["0", NCache[{Rational[1, 2], 0}, {0.5, 0}], {0, -1}],
+           "0"],
+          Annotation[#, 0, "Tooltip"]& ]}, 
+        {GrayLevel[1], EdgeForm[GrayLevel[0]], DiskBox[{6.5, 0}, 0.5]}, 
+        TagBox[
+         TooltipBox[InsetBox["0.1`", {6.5, 0}, {0, 0}],
+          "0.1`"],
+         Annotation[#, 0.1, "Tooltip"]& ], 
+        {GrayLevel[0], ArrowBox[{{4, 0}, {6., 0.}}]}, 
+        {GrayLevel[0], ArrowBox[{{7, 0}, {8, 0}}]}}, 
+       NCache[{{{Rational[1, 8], 0}, {0, Rational[1, 8]}}, {
+         0, Rational[1, 2]}}, {{{0.125, 0}, {0, 0.125}}, {0, 0.5}}]],
+      AlignmentPoint->Center,
+      Axes->False,
+      AxesLabel->None,
+      AxesOrigin->Automatic,
+      AxesStyle->{},
+      Background->RGBColor[1., 1., 0.85],
+      BaseStyle->{},
+      BaselinePosition->Automatic,
+      ColorOutput->Automatic,
+      ContentSelectable->Automatic,
+      CoordinatesToolOptions:>Automatic,
+      DisplayFunction:>$DisplayFunction,
+      Epilog->{},
+      FormatType:>TraditionalForm,
+      FrameTicks->None,
+      FrameTicksStyle->{},
+      GridLines->None,
+      GridLinesStyle->{},
+      ImageMargins->0.,
+      ImagePadding->All,
+      ImageSizeRaw->Automatic,
+      Method->Automatic,
+      PlotRange->All,
+      PlotRangeClipping->False,
+      PlotRangePadding->Automatic,
+      PlotRegion->Automatic,
+      PreserveImageOptions->Automatic,
+      Prolog->{},
+      RotateLabel->True,
+      Ticks->None,
+      TicksStyle->{}], "\[SpanFromLeft]"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox[
+        StyleBox["\<\"Basic Properties\"\>",
+         StripOnInput->False,
+         FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
+       "080aa2f7-e0cb-45ea-b1ec-c06188d627eb"],
+      Text[
+       Style["Basic Properties", Bold]]], "\[SpanFromLeft]"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"NetworkType\"\>", TextForm]], "InlineText",ExpressionUUID->
+       "2c853a94-a8ef-404e-930d-a9e76d1656a0"],
+      Text["NetworkType"]], "\<\"Open\"\>"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"NodeCount\"\>", TextForm]], "InlineText",ExpressionUUID->
+       "72e82eb3-23fb-49ee-a333-2930243740e9"],
+      Text["NodeCount"]], "3"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"SelectedNode\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"a6b058f3-58a4-4dcb-9451-251b0ac88319"],
+      Text["SelectedNode"]], "2"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox[
+        StyleBox["\<\"Performance Measures\"\>",
+         StripOnInput->False,
+         FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
+       "bb1543e9-4c7f-43ab-9d9c-6c576b227f56"],
+      Text[
+       Style["Performance Measures", Bold]]], "\[SpanFromLeft]"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanSystemSize\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"fffd2af1-66a8-46f5-8abd-6ec2e216d20b"],
+      Text["MeanSystemSize"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanSystemTime\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"91336262-2e6d-4d73-ba15-73da0608e062"],
+      Text["MeanSystemTime"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanQueueSize\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"6327dd11-7bc7-4c2c-a96d-53a858ccde6b"],
+      Text["MeanQueueSize"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanQueueTime\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"b613f8be-c6a8-490a-9b14-c7e4bcf9d6d1"],
+      Text["MeanQueueTime"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}
+   },
+   AutoDelete->False,
+   BaseStyle->{FontFamily -> "Times"},
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxBackground->{"Columns" -> {{
+        RGBColor[1., 1., 0.85]}}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {{1}}, "Rows" -> {{1}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.813033005544016*^9, 3.813033113206586*^9}, {
+   3.813033149744207*^9, 3.8130331696077538`*^9}, 3.8130340373846188`*^9, 
+   3.8130349045533657`*^9, 3.8130349788714175`*^9, 3.813035229709962*^9, 
+   3.813035856613432*^9, 3.813036179644055*^9, 3.813036441092523*^9, {
+   3.813037670774467*^9, 3.813037683707691*^9}, {3.8130377765388403`*^9, 
+   3.8130377888490667`*^9}, {3.81303799420401*^9, 3.8130380266160707`*^9}, {
+   3.813038196088323*^9, 3.813038249919297*^9}, 3.813038302992371*^9},
+ CellLabel->
+  "Out[283]=",ExpressionUUID->"7c6cbcd2-1705-486f-9cd7-1731123a5ba3"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     GraphicsBox[GeometricTransformationBox[
+       {Arrowheads[Medium], {{
+          {GrayLevel[1], 
+           RectangleBox[NCache[{3, Rational[-1, 2]}, {3, -0.5}]]}, {
+           {GrayLevel[0], 
+            LineBox[NCache[{{3, Rational[-1, 2]}, {3, Rational[1, 2]}}, {{
+               3, -0.5}, {3, 0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[16, 5], Rational[-1, 2]}, {
+               Rational[16, 5], Rational[1, 2]}}, {{3.2, -0.5}, {3.2, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[17, 5], Rational[-1, 2]}, {
+               Rational[17, 5], Rational[1, 2]}}, {{3.4, -0.5}, {3.4, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[18, 5], Rational[-1, 2]}, {
+               Rational[18, 5], Rational[1, 2]}}, {{3.6, -0.5}, {3.6, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{Rational[19, 5], Rational[-1, 2]}, {
+               Rational[19, 5], Rational[1, 2]}}, {{3.8, -0.5}, {3.8, 
+              0.5}}]]}, 
+           {GrayLevel[0], 
+            LineBox[NCache[{{4, Rational[-1, 2]}, {4, Rational[1, 2]}}, {{
+               4, -0.5}, {4, 0.5}}]]}}, 
+          {GrayLevel[0], 
+           LineBox[NCache[{{1, Rational[-1, 2]}, {4, Rational[-1, 2]}, {
+              4, Rational[1, 2]}, {1, Rational[1, 2]}}, {{1, -0.5}, {
+              4, -0.5}, {4, 0.5}, {1, 0.5}}]]}}, 
+         {GrayLevel[0], ArrowBox[{{0, 0}, {2, 0}}]}, 
+         TagBox[
+          TooltipBox[InsetBox["0", NCache[{Rational[1, 2], 0}, {0.5, 0}], {0, -1}],
+           "0"],
+          Annotation[#, 0, "Tooltip"]& ]}, 
+        {GrayLevel[1], EdgeForm[GrayLevel[0]], DiskBox[{6.5, 0}, 0.5]}, 
+        TagBox[
+         TooltipBox[InsetBox["1", {6.5, 0}, {0, 0}],
+          "1"],
+         Annotation[#, 1, "Tooltip"]& ], 
+        {GrayLevel[0], ArrowBox[{{4, 0}, {6., 0.}}]}, 
+        {GrayLevel[0], ArrowBox[{{7, 0}, {8, 0}}]}}, 
+       NCache[{{{Rational[1, 8], 0}, {0, Rational[1, 8]}}, {
+         0, Rational[1, 2]}}, {{{0.125, 0}, {0, 0.125}}, {0, 0.5}}]],
+      AlignmentPoint->Center,
+      Axes->False,
+      AxesLabel->None,
+      AxesOrigin->Automatic,
+      AxesStyle->{},
+      Background->RGBColor[1., 1., 0.85],
+      BaseStyle->{},
+      BaselinePosition->Automatic,
+      ColorOutput->Automatic,
+      ContentSelectable->Automatic,
+      CoordinatesToolOptions:>Automatic,
+      DisplayFunction:>$DisplayFunction,
+      Epilog->{},
+      FormatType:>TraditionalForm,
+      FrameTicks->None,
+      FrameTicksStyle->{},
+      GridLines->None,
+      GridLinesStyle->{},
+      ImageMargins->0.,
+      ImagePadding->All,
+      ImageSizeRaw->Automatic,
+      Method->Automatic,
+      PlotRange->All,
+      PlotRangeClipping->False,
+      PlotRangePadding->Automatic,
+      PlotRegion->Automatic,
+      PreserveImageOptions->Automatic,
+      Prolog->{},
+      RotateLabel->True,
+      Ticks->None,
+      TicksStyle->{}], "\[SpanFromLeft]"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox[
+        StyleBox["\<\"Basic Properties\"\>",
+         StripOnInput->False,
+         FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
+       "58391f6f-bfdb-4374-bfb5-faaa157f4458"],
+      Text[
+       Style["Basic Properties", Bold]]], "\[SpanFromLeft]"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"NetworkType\"\>", TextForm]], "InlineText",ExpressionUUID->
+       "5aeeb67a-8e39-43ba-b2ec-0d7b35725193"],
+      Text["NetworkType"]], "\<\"Open\"\>"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"NodeCount\"\>", TextForm]], "InlineText",ExpressionUUID->
+       "f80d2d7a-daa1-4b9b-bc44-af57b6974e2f"],
+      Text["NodeCount"]], "3"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"SelectedNode\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"98ff66e1-746d-4110-8373-69bc9b867f8c"],
+      Text["SelectedNode"]], "3"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox[
+        StyleBox["\<\"Performance Measures\"\>",
+         StripOnInput->False,
+         FontWeight->Bold], TextForm]], "InlineText",ExpressionUUID->
+       "73ac9d7a-51b5-451f-940c-d904ad38b15a"],
+      Text[
+       Style["Performance Measures", Bold]]], "\[SpanFromLeft]"},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanSystemSize\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"9cc4cc31-9bef-409b-8dcf-26321411eb5c"],
+      Text["MeanSystemSize"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanSystemTime\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"5da6798f-1c0c-419e-9f01-3f3c139ae698"],
+      Text["MeanSystemTime"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanQueueSize\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"ae9b1916-8f0a-4fed-b514-df69ffa89b9c"],
+      Text["MeanQueueSize"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]},
+    {
+     InterpretationBox[Cell[BoxData[
+       FormBox["\<\"MeanQueueTime\"\>", TextForm]], "InlineText",
+       ExpressionUUID->"f9f814ec-79b7-432e-9e09-a7a7cfe13ec2"],
+      Text["MeanQueueTime"]], 
+     RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}
+   },
+   AutoDelete->False,
+   BaseStyle->{FontFamily -> "Times"},
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxBackground->{"Columns" -> {{
+        RGBColor[1., 1., 0.85]}}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {{1}}, "Rows" -> {{1}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.813033005544016*^9, 3.813033113206586*^9}, {
+   3.813033149744207*^9, 3.8130331696077538`*^9}, 3.8130340373846188`*^9, 
+   3.8130349045533657`*^9, 3.8130349788714175`*^9, 3.813035229709962*^9, 
+   3.813035856613432*^9, 3.813036179644055*^9, 3.813036441092523*^9, {
+   3.813037670774467*^9, 3.813037683707691*^9}, {3.8130377765388403`*^9, 
+   3.8130377888490667`*^9}, {3.81303799420401*^9, 3.8130380266160707`*^9}, {
+   3.813038196088323*^9, 3.813038249919297*^9}, 3.813038303061405*^9},
+ CellLabel->
+  "Out[284]=",ExpressionUUID->"9e0e4698-1ca6-4883-81bd-7061b7b4b890"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -10275,47 +10693,48 @@ Cell[CellGroupData[{
 Cell[402023, 8202, 2865, 65, 320, "Input",ExpressionUUID->"2f845f50-6bf8-4182-bafc-9f234267aef9"],
 Cell[404891, 8269, 1361, 26, 76, "Output",ExpressionUUID->"a6ad36c6-89ee-4dbd-8936-1c6a389f4f69"]
 }, Open  ]],
-Cell[406267, 8298, 2339, 38, 90, "Text",ExpressionUUID->"62190b28-2ebd-402c-bf6a-0b44297e2695"],
+Cell[406267, 8298, 2359, 38, 54, "Text",ExpressionUUID->"62190b28-2ebd-402c-bf6a-0b44297e2695"],
 Cell[CellGroupData[{
-Cell[408631, 8340, 1478, 37, 354, "Input",ExpressionUUID->"8003efe8-666f-4786-9aa9-6f8cf6ae1c3e"],
-Cell[410112, 8379, 1298, 21, 82, "Message",ExpressionUUID->"c14c635b-7782-4331-a50f-2e42d964217e"],
-Cell[411413, 8402, 1376, 35, 127, "Output",ExpressionUUID->"f8fd730d-8d49-480d-8c8c-ffbf2c10bc01"]
+Cell[408651, 8340, 1847, 50, 320, "Input",ExpressionUUID->"8003efe8-666f-4786-9aa9-6f8cf6ae1c3e"],
+Cell[410501, 8392, 6383, 153, 542, "Output",ExpressionUUID->"b14e7611-9d0e-4781-a254-02eb59552a76"],
+Cell[416887, 8547, 6389, 153, 542, "Output",ExpressionUUID->"7c6cbcd2-1705-486f-9cd7-1731123a5ba3"],
+Cell[423279, 8702, 6381, 153, 542, "Output",ExpressionUUID->"9e0e4698-1ca6-4883-81bd-7061b7b4b890"]
 }, Open  ]],
-Cell[412804, 8440, 3137, 52, 516, "Text",ExpressionUUID->"b9823496-d0e1-4a3a-a97c-5184bdfd4fef"]
+Cell[429675, 8858, 3137, 52, 516, "Text",ExpressionUUID->"b9823496-d0e1-4a3a-a97c-5184bdfd4fef"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[415990, 8498, 166, 3, 102, "Section",ExpressionUUID->"cc89bda2-cdf5-4714-ad49-7df60c9130fd"],
+Cell[432861, 8916, 166, 3, 102, "Section",ExpressionUUID->"cc89bda2-cdf5-4714-ad49-7df60c9130fd"],
 Cell[CellGroupData[{
-Cell[416181, 8505, 364, 6, 69, "Subsubsection",ExpressionUUID->"713c4640-0522-47ea-b3de-d44e6fde67d1"],
-Cell[416548, 8513, 1058, 30, 303, "Text",ExpressionUUID->"06e80177-c783-4ebf-bd73-280dbed8211d"],
-Cell[417609, 8545, 167, 3, 54, "Text",ExpressionUUID->"bb17c6ba-4d2e-4e57-a881-a91a585bbae7"],
+Cell[433052, 8923, 364, 6, 69, "Subsubsection",ExpressionUUID->"713c4640-0522-47ea-b3de-d44e6fde67d1"],
+Cell[433419, 8931, 1058, 30, 303, "Text",ExpressionUUID->"06e80177-c783-4ebf-bd73-280dbed8211d"],
+Cell[434480, 8963, 167, 3, 54, "Text",ExpressionUUID->"bb17c6ba-4d2e-4e57-a881-a91a585bbae7"],
 Cell[CellGroupData[{
-Cell[417801, 8552, 243, 6, 47, "Input",ExpressionUUID->"69aefcb0-8cea-4f82-ac98-bdce3d3b0b84"],
-Cell[418047, 8560, 19384, 399, 387, "Output",ExpressionUUID->"69fc8796-376f-44ce-8856-eb76abc1f0dc"]
+Cell[434672, 8970, 243, 6, 47, "Input",ExpressionUUID->"69aefcb0-8cea-4f82-ac98-bdce3d3b0b84"],
+Cell[434918, 8978, 19384, 399, 387, "Output",ExpressionUUID->"69fc8796-376f-44ce-8856-eb76abc1f0dc"]
 }, Open  ]],
-Cell[437446, 8962, 221, 7, 90, "Text",ExpressionUUID->"2a980b81-267e-4320-b65a-dc9fd131af0e"],
+Cell[454317, 9380, 221, 7, 90, "Text",ExpressionUUID->"2a980b81-267e-4320-b65a-dc9fd131af0e"],
 Cell[CellGroupData[{
-Cell[437692, 8973, 165, 3, 47, "Input",ExpressionUUID->"373bb0f9-364c-4296-8456-8f33f8835a7d"],
-Cell[437860, 8978, 531, 9, 76, "Output",ExpressionUUID->"e0625e40-0558-4bc7-9e6e-3370153cdb06"]
+Cell[454563, 9391, 165, 3, 47, "Input",ExpressionUUID->"373bb0f9-364c-4296-8456-8f33f8835a7d"],
+Cell[454731, 9396, 531, 9, 76, "Output",ExpressionUUID->"e0625e40-0558-4bc7-9e6e-3370153cdb06"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[438428, 8992, 4471, 122, 594, "Code",ExpressionUUID->"0570e9a8-a01c-4ad2-9a2e-6825ac23b55d",
+Cell[455299, 9410, 4471, 122, 594, "Code",ExpressionUUID->"0570e9a8-a01c-4ad2-9a2e-6825ac23b55d",
  InitializationCell->True],
-Cell[442902, 9116, 663, 13, 34, "Message",ExpressionUUID->"1f0cdbcd-c822-4d7f-ad8b-f1dbcd1371aa"],
-Cell[443568, 9131, 662, 13, 34, "Message",ExpressionUUID->"ee40e9f4-c116-4d1a-900e-f2f203ea4170"],
-Cell[444233, 9146, 3130, 64, 213, "Output",ExpressionUUID->"3a6dd1f8-46f6-4f9d-a3eb-7b9b6ef087ed"],
-Cell[447366, 9212, 1636, 26, 53, "Output",ExpressionUUID->"532afcbb-d79e-451b-90e8-f87ddacb6b02"]
+Cell[459773, 9534, 663, 13, 34, "Message",ExpressionUUID->"1f0cdbcd-c822-4d7f-ad8b-f1dbcd1371aa"],
+Cell[460439, 9549, 662, 13, 34, "Message",ExpressionUUID->"ee40e9f4-c116-4d1a-900e-f2f203ea4170"],
+Cell[461104, 9564, 3130, 64, 213, "Output",ExpressionUUID->"3a6dd1f8-46f6-4f9d-a3eb-7b9b6ef087ed"],
+Cell[464237, 9630, 1636, 26, 76, "Output",ExpressionUUID->"532afcbb-d79e-451b-90e8-f87ddacb6b02"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[449051, 9244, 568, 8, 69, "Subsubsection",ExpressionUUID->"9fd0cf1f-c1cf-4eb4-a87f-2e201d575ddd"],
-Cell[449622, 9254, 406, 11, 196, "Text",ExpressionUUID->"e46042fc-1dff-44c9-bbe9-262c6cada49a"],
-Cell[450031, 9267, 997, 27, 218, "Input",ExpressionUUID->"d9b2fad7-4b8b-487d-895d-5aa5186f418b"],
-Cell[451031, 9296, 6251, 109, 234, "Text",ExpressionUUID->"4ee484ba-e332-4267-827b-a5fb5c620e11"],
+Cell[465922, 9662, 568, 8, 69, "Subsubsection",ExpressionUUID->"9fd0cf1f-c1cf-4eb4-a87f-2e201d575ddd"],
+Cell[466493, 9672, 406, 11, 196, "Text",ExpressionUUID->"e46042fc-1dff-44c9-bbe9-262c6cada49a"],
+Cell[466902, 9685, 997, 27, 218, "Input",ExpressionUUID->"d9b2fad7-4b8b-487d-895d-5aa5186f418b"],
+Cell[467902, 9714, 6251, 109, 234, "Text",ExpressionUUID->"4ee484ba-e332-4267-827b-a5fb5c620e11"],
 Cell[CellGroupData[{
-Cell[457307, 9409, 198, 4, 47, "Input",ExpressionUUID->"956251a6-8ac2-42c5-9705-2f6137c20acd"],
-Cell[457508, 9415, 31251, 655, 277, "Output",ExpressionUUID->"f0bbf736-6166-4abb-9aed-1af15ba49c5a"]
+Cell[474178, 9827, 198, 4, 47, "Input",ExpressionUUID->"956251a6-8ac2-42c5-9705-2f6137c20acd"],
+Cell[474379, 9833, 31251, 655, 277, "Output",ExpressionUUID->"f0bbf736-6166-4abb-9aed-1af15ba49c5a"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
